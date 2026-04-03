@@ -1,19 +1,4 @@
 {
-  "name": "Appium Android",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-  "onCreateCommand": "bash .devcontainer/setup.sh",
-  "postStartCommand": "bash .devcontainer/start.sh",
-  "forwardPorts": [4723, 6080],
-  "portsAttributes": {
-    "6080": { "label": "Android Screen (noVNC)" },
-    "4723": { "label": "Appium Server" }
-  },
-  "hostRequirements": {
-    "cpus": 4,
-    "memory": "8gb"
-  },
-  "remoteEnv": {
-    "ANDROID_HOME": "/home/codespace/android-sdk",
-    "PATH": "${containerEnv:PATH}:/home/codespace/android-sdk/cmdline-tools/latest/bin:/home/codespace/android-sdk/emulator:/home/codespace/android-sdk/platform-tools"
-  }
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
 }
